@@ -1,3 +1,5 @@
-#🚀 CDAC DAC - Feb 2025 💻
+# 🚀 CDAC DAC - Feb 2025 💻
 
-This repository is a digital notebook of my journey through C-DAC's Diploma in Advanced Computing (DAC) program, February 2025 batch. Think of it as a collection of experiments, notes, and projects that showcase the skills I'm building.
+## 📌 Overview  
+This repository contains assignments and projects completed as part of the **PG-DAC (Post Graduate Diploma in Advanced Computing)** at **CDAC Mumbai**. The assignments cover a range of topics, including programming, data structures, databases, web development, and advanced computing concepts.  
+
