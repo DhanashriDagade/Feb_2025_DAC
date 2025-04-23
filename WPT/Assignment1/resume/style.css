@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+    padding: 10;
+  }
+  
+  body {
+   
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .resume {
+    display: flex;
+    max-width: 900px;
+    margin: 8% auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(62, 36, 90, 0.1);
+  }
+  
+  .left {
+    background: #217193;
+    color: white;
+    width: 35%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .right {
+    width: 65%;
+    padding: 30px;
+  }
+  
+  .profile-pic {
+    
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  .role {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .section {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .section h2, .section h3 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .left .section h3 {
+    color: #f2f2f2;
+  }
+  
+  .section ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  hr {
+    border: 0.5px solid #555;
+    margin: 20px 0;
+  }
+ 
