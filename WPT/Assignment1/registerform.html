@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lavender;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2, h3 {
+      color: #00796b;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    input:hover, input:focus {
+      border-color: #00796b;
+      outline: none;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .col-50 {
+      flex: 0 0 48%;
+    }
+
+    .signature {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .signature div {
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .col-50 {
+        flex: 0 0 100%;
+      }
+
+      .signature {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Registration Form</h2>
+  <p>This form is used to collect participant information for enrollment purposes.</p>
+
+  <h3>Personal Information</h3>
+  <div class="row">
+    <div class="col-50">
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name">
+    </div>
+    <div class="col-50">
+      <label>Nickname</label>
+      <input type="text" placeholder="Enter nickname">
+    </div>
+    <div class="col-50">
+      <label>Date of Birth</label>
+      <input type="date">
+    </div>
+    <div class="col-50">
+      <label>Place of Birth</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>Gender</label>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="col-50">
+      <label>Marital Status</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>Email</label>
+      <input type="email">
+    </div>
+    <div class="col-50">
+      <label>Phone</label>
+      <input type="tel">
+    </div>
+    <div class="col-50">
+      <label>Nationality</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>National ID No</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>Domicile</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>CP Domicile</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>Start Time</label>
+      <input type="time">
+    </div>
+    <div class="col-50">
+      <label>Post Code</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>Country</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <h3>Address</h3>
+  <div class="row">
+    <div class="col-50">
+      <label>Present Address</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>City</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>State</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>Zip Code</label>
+      <input type="text">
+    </div>
+    <div class="col-50">
+      <label>Student Trustee</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="signature">
+    <div>
+      <label>Register Signature</label>
+      <input type="text" placeholder="Sign here">
+    </div>
+    <div>
+      <label>Officer Signature</label>
+      <input type="text" placeholder="Sign here">
+    </div>
+  </div>
+
+  <div class="footer">
+   
+    <p><strong>Thank you for registration!</strong> </p>
+  </div>
+</div>
+
+</body>
+</html>
