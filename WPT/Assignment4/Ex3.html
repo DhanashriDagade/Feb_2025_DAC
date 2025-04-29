@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 3 - fetchData</title>
+</head>
+<body>
+
+  <h2>Output</h2>
+
+  <script>
+    function fetchData(url, callback) {
+      console.log(`Fetching data from ${url}...`);
+
+      // Simulate a delay with setTimeout (e.g., 2 seconds)
+      setTimeout(function() {
+        const fakeResponse = `Response from ${url}`;
+        callback(fakeResponse);
+      }, 2000);
+    }
+
+    // Call the function with a URL and a callback
+    fetchData('https://example.com/hi/data', function(response) {
+      console.log("Received:", response);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Highlight Bold Words</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+.container{
+    max-width: 30%;
+    margin: auto;
+    text-align: center;
+    border-top: 10cap;
+    border: 2px solid #0e0e0e;
+}
+
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+      color: white;
+      background-color: blue;
+      border: none;
+      cursor: pointer;
+      margin-top: 5%;
+    }
+
+    .highlight {
+      color: rgb(232, 97, 13);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <p>
+        We have just started <b>this</b> section for the users 
+        (<b>beginner</b> to intermediate) who <b>want</b> to work 
+        with <b>various</b> JavaScript <b>problems</b> and write scripts 
+        online to <b>test</b> their JavaScript <b>skill</b>.
+      </p>
+</div>
+
+<button onmouseover="highlightBold(true)" onmouseout="highlightBold(false)">
+    highlight bold words
+  </button>
+  
+
+  <script>
+    function highlightBold(apply) {
+      const boldWords = document.querySelectorAll("b");
+      boldWords.forEach(word => {
+        if (apply) {
+          word.classList.add("highlight");
+        } else {
+          word.classList.remove("highlight");
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

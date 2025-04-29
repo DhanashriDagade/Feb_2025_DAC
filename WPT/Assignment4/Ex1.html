@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uppercase Callback Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      width: 400px;
+      margin: auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 30px;
+      background-color: #f3a9ef;
+    }
+    #output {
+      margin-top: 15px;
+      font-weight: bold;
+      color: rgb(56, 9, 187);
+    }
+  
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h3>Convert to Uppercase</h3>
+    <input type="text" id="inputText" placeholder="Enter text here" />
+    <button onclick="handleConvert()">Convert</button>
+
+    <p id="output"></p>
+  </div>
+
+  <script>
+   
+    function toUpperCase(str) {
+      return str.toUpperCase();
+    }
+
+    
+    function processData(input, callback) {
+      return callback(input);
+    }
+
+
+    function handleConvert() {
+      const input = document.getElementById("inputText").value;
+      const result = processData(input, toUpperCase);
+      document.getElementById("output").textContent = "Result: " + result;
+    }
+  </script>
+
+</body>
+</html>

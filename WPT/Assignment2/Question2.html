@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register form</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(189, 150, 225);
+        }
+        #submit{
+            width: 8%;
+            height: 10%;
+            text-size-adjust: 10%;
+            color: aliceblue;
+            background-color: brown;
+            box-shadow: 10%;
+            border-radius: 10%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form id="myForm">
+        First Name: <input type="text" id="firstName"><br><br>
+        Last Name: <input type="text" id="lastName"><br><br>
+        Contact No: <input type="text" id="contactNo"><br><br>
+        Email ID: <input type="email" id="emailId"><br><br>
+       
+        <button type="button" id="submit">Submit</button>
+    </form>
+
+    <h3>Form Data:</h3>
+    <div id="output"></div>
+
+    <script>
+    
+        var button = document.getElementById("submit");
+        var output = document.getElementById("output");
+
+    
+        button.addEventListener("click", function() {
+         
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var contactNo = document.getElementById("contactNo").value;
+            var emailId = document.getElementById("emailId").value;
+
+            output.innerHTML = `
+                <p><strong>First Name:</strong> ${firstName}</p>
+                <p><strong>Last Name:</strong> ${lastName}</p>
+                <p><strong>Contact No:</strong> ${contactNo}</p>
+                <p><strong>Email ID:</strong> ${emailId}</p>
+            `;
+        });
+    </script>
+
+</body>
+</html>

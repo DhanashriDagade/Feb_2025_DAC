@@ -1,0 +1,108 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General */
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-image: url('image/back.jpg');
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #33383d;
+    color: #fff;
+    padding: 3%;
+  }
+  
+  .navbar .logo {
+    float: left;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    float: right;
+  }
+  
+  .navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+    
+  }
+  .navbar .nav-links li:hover {
+   background-color: #1fa1be;
+   
+    color:black;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .search-form {
+    margin-top: 20px;
+  }
+  
+  .search-form input {
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Categories */
+  .categories {
+    padding: 4rem 0;
+    background: #f4f4f4;
+  }
+  
+  .category-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  

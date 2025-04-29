@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 2 - forEachElement</title>
+</head>
+<body>
+
+  <h2>output</h2>
+
+  <script>
+    function forEachElement(array, callback) {
+      for (let i = 0; i < array.length; i++) {
+        callback(array[i], i);
+      }
+    }
+
+    const numbers = [1, 2, 3, 4, 5];
+
+    // Anonymous function as the callback
+    forEachElement(numbers, function(element, index) {
+      console.log(`Index ${index}: ${element * 2}`);
+    });
+  </script>
+
+</body>
+</html>

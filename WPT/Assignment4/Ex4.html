@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 4 - fetchData with Error Handling</title>
+</head>
+<body>
+
+  <h2>Open Error</h2>
+
+  <script>
+    function fetchData(url, callback) {
+      console.log(`Fetching data from ${url}...`);
+
+      setTimeout(function() {
+        const hasError = Math.random() < 0.3; // Simulate 30% chance of error
+
+        if (hasError) {
+          callback("Error: Failed to fetch data.", null);
+        } else {
+          const response = `Response from ${url}`;
+          callback(null, response);
+        }
+      }, 2000);
+    }
+
+    // Using the fetchData function
+    fetchData('https://example.com/api/data', function(error, response) {
+      if (error) {
+        console.error("Error occurred:", error);
+      } else {
+        console.log("Success:", response);
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Remove Item from Dropdown</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+      
+
+    }
+    select, button {
+      margin-top: 10px;
+      padding: 5px;
+      
+    }
+    .container{
+        max-width: 25%;
+        margin-left: 37%;
+        margin-top: 10%;
+       container-type: inline-size;
+        background-position-x: center;
+        background-color: pink;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+
+  <h3>Remove Item from Drop-Down List</h3>
+
+  <select id="myDropdown">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="mango">Mango</option>
+    <option value="orange">Orange</option>
+  </select>
+  
+  <br>
+
+  <button onclick="removeSelectedItem()">Remove Selected Item</button>
+</div>
+
+  <script>
+    function removeSelectedItem() {
+      const dropdown = document.getElementById("myDropdown");
+      if (dropdown.selectedIndex !== -1) {
+        dropdown.remove(dropdown.selectedIndex);
+      } else {
+        alert("No item selected to remove.");
+      }
+    }
+  </script>
+
+</body>
+</html>
